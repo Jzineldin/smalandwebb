@@ -1,45 +1,49 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
-    <footer className="bg-gray-900 text-gray-400 py-12">
+    <footer className="bg-gray-900 dark:bg-slate-950 text-gray-400 py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="font-bold text-xl text-white mb-4 block">
-              Småland<span className="text-blue-400">Webb</span>
+            <Link href="/" className="mb-4 block">
+              <Image src="/logo.png" alt="SmålandWebb" width={120} height={34} />
             </Link>
             <p className="text-sm">
-              Professionella hemsidor för småföretag i Småland.
-              Baserad i Åseda, Uppvidinge.
+              {t.footer.tagline}
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Snabblänkar</h4>
+            <h4 className="font-semibold text-white mb-4">{t.footer.quickLinks}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="#portfolio" className="hover:text-white transition-colors">
-                  Arbeten
+                  {t.header.portfolio}
                 </Link>
               </li>
               <li>
                 <Link href="#tjanster" className="hover:text-white transition-colors">
-                  Tjänster
+                  {t.header.services}
                 </Link>
               </li>
               <li>
                 <Link href="#priser" className="hover:text-white transition-colors">
-                  Priser
+                  {t.header.pricing}
                 </Link>
               </li>
               <li>
                 <Link href="#kontakt" className="hover:text-white transition-colors">
-                  Kontakt
+                  {t.header.contact}
                 </Link>
               </li>
             </ul>
@@ -47,7 +51,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Kontakt</h4>
+            <h4 className="font-semibold text-white mb-4">{t.footer.contact}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="mailto:kevin@smalandwebb.se" className="hover:text-white transition-colors">
@@ -70,11 +74,8 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <p>© {currentYear} SmålandWebb. Alla rättigheter förbehållna.</p>
-          <p>
-            Organisationsnummer: [Lägg till senare]
-          </p>
+        <div className="border-t border-gray-800 dark:border-slate-800 pt-8 text-center text-sm">
+          <p>© {currentYear} SmålandWebb. {t.footer.copyright}</p>
         </div>
       </div>
     </footer>

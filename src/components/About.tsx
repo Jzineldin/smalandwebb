@@ -1,31 +1,36 @@
+"use client";
+
 import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function About() {
+  const { t } = useLanguage();
+
   const highlights = [
     {
       icon: "🏆",
-      title: "#2 globalt",
-      description: "Lovable Shipped 2025",
+      title: t.about.highlights.award.title,
+      description: t.about.highlights.award.description,
     },
     {
       icon: "🇸🇪",
-      title: "Svenska företag",
-      description: "Erfarenhet av lokala behov",
+      title: t.about.highlights.swedish.title,
+      description: t.about.highlights.swedish.description,
     },
     {
       icon: "⚡",
-      title: "1-2 veckor",
-      description: "Snabb leverans",
+      title: t.about.highlights.fast.title,
+      description: t.about.highlights.fast.description,
     },
     {
       icon: "💰",
-      title: "Fast pris",
-      description: "Inga dolda kostnader",
+      title: t.about.highlights.price.title,
+      description: t.about.highlights.price.description,
     },
   ];
 
   return (
-    <section id="om" className="py-16 md:py-24 bg-gray-50">
+    <section id="om" className="py-16 md:py-24 bg-gray-50 dark:bg-slate-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text content */}
@@ -37,45 +42,29 @@ export function About() {
                   src="/profile.png"
                   alt="Kevin El-Zarka"
                   fill
-                  className="object-cover object-[center_20%] rounded-full ring-4 ring-white shadow-lg"
+                  className="object-cover object-right-top rounded-full ring-4 ring-white dark:ring-slate-700 shadow-lg"
                 />
               </div>
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                  Om mig
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                  {t.about.title}
                 </h2>
-                <p className="text-blue-600 font-medium mt-1">Kevin El-Zarka</p>
+                <p className="text-blue-600 dark:text-blue-400 font-medium mt-1">{t.about.name}</p>
               </div>
             </div>
 
-            <div className="space-y-4 text-gray-600">
-              <p>
-                Jag bor i Åseda, Småland och hjälper lokala företag att få professionella hemsidor.
-              </p>
-              <p>
-                Jag har byggt hemsidor för svenska företag inom bygg, möbel och
-                tjänstesektorn. Nu fokuserar jag på att hjälpa lokala företag i
-                Uppvidinge och Småland att synas online.
-              </p>
-              <p>
-                Med erfarenhet av både enkla företagshemsidor och avancerade
-                tech-produkter kan jag leverera precis det du behöver – varken
-                mer eller mindre.
-              </p>
+            <div className="space-y-4 text-gray-600 dark:text-gray-300">
+              <p>{t.about.bio1}</p>
+              <p>{t.about.bio2}</p>
+              <p>{t.about.bio3}</p>
             </div>
 
             {/* Why choose me */}
             <div className="mt-8">
-              <h3 className="font-bold text-gray-900 mb-4">Varför välja mig?</h3>
+              <h3 className="font-bold text-gray-900 dark:text-white mb-4">{t.about.whyMe}</h3>
               <ul className="space-y-3">
-                {[
-                  "Erfarenhet av svenska företag",
-                  "Baserad i Småland – förstår lokala behov",
-                  "Hemsida klar på 1-2 veckor",
-                  "Fast pris utan dolda kostnader",
-                  "Personlig service på svenska",
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-2 text-gray-600">
+                {t.about.reasons.map((item, index) => (
+                  <li key={index} className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
                     <svg
                       className="w-5 h-5 text-green-500 flex-shrink-0"
                       fill="currentColor"
@@ -99,11 +88,11 @@ export function About() {
             {highlights.map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl border border-gray-100 text-center"
+                className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-gray-100 dark:border-slate-700 text-center"
               >
                 <div className="text-3xl mb-2">{item.icon}</div>
-                <div className="font-bold text-gray-900">{item.title}</div>
-                <div className="text-sm text-gray-500">{item.description}</div>
+                <div className="font-bold text-gray-900 dark:text-white">{item.title}</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">{item.description}</div>
               </div>
             ))}
           </div>

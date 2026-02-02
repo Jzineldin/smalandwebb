@@ -1,58 +1,59 @@
+"use client";
+
 import Link from "next/link";
 import { BrowserFrame } from "./BrowserFrame";
-
-const projects = [
-  {
-    title: "Tale Forge",
-    category: "AI Storytelling Platform",
-    badge: "🏆 #2 Globalt - Lovable Shipped 2025",
-    description:
-      "AI-driven berättarplattform för familjer och pedagoger. Skapa illustrerade berättelser med egna karaktärer.",
-    image: "/projects/tale-forge.png",
-    url: "https://tale-forge.app",
-    tags: ["AI", "React", "Award-winning"],
-    featured: true,
-  },
-  {
-    title: "XLify",
-    category: "SaaS / Faktura-automation",
-    description:
-      "AI-verktyg som automatiserar fakturainmatning. Sparar tid för revisorer och ekonomiavdelningar.",
-    image: "/projects/xlify.png",
-    url: "https://www.xlify.app",
-    tags: ["AI/ML", "OCR", "B2B SaaS"],
-  },
-  {
-    title: "Gim-Vea",
-    category: "Tjänsteföretag",
-    description:
-      "Professionell hemsida för virtuell assistanstjänst med kundrecensioner och bokningsfunktion.",
-    image: "/projects/gim-vea.png",
-    url: "https://gim-vea.com",
-    tags: ["Service Business", "Booking", "Testimonials"],
-  },
-  {
-    title: "Postrilo",
-    category: "AI Content Platform",
-    description:
-      "Plattform för AI-genererat innehåll till sociala medier. Skapa engagerande inlägg på minuter.",
-    image: "/projects/postrilo.png",
-    url: "https://postrilo.com",
-    tags: ["AI", "Content Creation", "Social Media"],
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Portfolio() {
+  const { t } = useLanguage();
+
+  const projects = [
+    {
+      title: "Tale Forge",
+      category: t.portfolio.projects.taleForge.category,
+      badge: t.portfolio.projects.taleForge.badge,
+      description: t.portfolio.projects.taleForge.description,
+      image: "/projects/tale-forge.png",
+      url: "https://tale-forge.app",
+      tags: ["AI", "React", "Award-winning"],
+      featured: true,
+    },
+    {
+      title: "XLify",
+      category: t.portfolio.projects.xlify.category,
+      description: t.portfolio.projects.xlify.description,
+      image: "/projects/xlify.png",
+      url: "https://www.xlify.app",
+      tags: ["AI/ML", "OCR", "B2B SaaS"],
+    },
+    {
+      title: "Gim-Vea",
+      category: t.portfolio.projects.gimVea.category,
+      description: t.portfolio.projects.gimVea.description,
+      image: "/projects/gim-vea.png",
+      url: "https://gim-vea.com",
+      tags: ["Service Business", "Booking", "Testimonials"],
+    },
+    {
+      title: "Postrilo",
+      category: t.portfolio.projects.postrilo.category,
+      description: t.portfolio.projects.postrilo.description,
+      image: "/projects/postrilo.png",
+      url: "https://postrilo.com",
+      tags: ["AI", "Content Creation", "Social Media"],
+    },
+  ];
+
   return (
-    <section id="portfolio" className="py-16 md:py-24 bg-white">
+    <section id="portfolio" className="py-16 md:py-24 bg-white dark:bg-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Tidigare arbeten
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            {t.portfolio.title}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Projekt jag har byggt och lanserat
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            {t.portfolio.subtitle}
           </p>
         </div>
 
@@ -61,10 +62,10 @@ export function Portfolio() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`group bg-white rounded-2xl border overflow-hidden hover:shadow-xl transition-all duration-300 ${
+              className={`group bg-white dark:bg-slate-800 rounded-2xl border overflow-hidden hover:shadow-xl dark:hover:shadow-slate-700/30 transition-all duration-300 ${
                 project.featured
-                  ? "border-blue-200 ring-2 ring-blue-100"
-                  : "border-gray-100"
+                  ? "border-blue-200 dark:border-blue-700 ring-2 ring-blue-100 dark:ring-blue-900"
+                  : "border-gray-100 dark:border-slate-700"
               }`}
             >
               {/* Browser Frame with Screenshot */}
@@ -88,21 +89,21 @@ export function Portfolio() {
               {/* Content */}
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-sm text-blue-600 font-medium">
+                  <span className="text-sm text-blue-600 dark:text-blue-400 font-medium">
                     {project.category}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">{project.description}</p>
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded"
+                      className="text-xs bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-300 px-2 py-1 rounded"
                     >
                       {tag}
                     </span>
@@ -114,9 +115,9 @@ export function Portfolio() {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700 transition-colors"
+                  className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                 >
-                  Besök sidan
+                  {t.portfolio.visitSite}
                   <svg
                     className="w-4 h-4"
                     fill="none"
@@ -138,17 +139,17 @@ export function Portfolio() {
 
         {/* Tech badge */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-3 bg-gray-50 px-6 py-3 rounded-full">
-            <span className="text-sm text-gray-500">
-              Byggt med modern teknik:
+          <div className="inline-flex items-center gap-3 bg-gray-50 dark:bg-slate-800 px-6 py-3 rounded-full">
+            <span className="text-sm text-gray-500 dark:text-gray-400">
+              {t.portfolio.techBadge}
             </span>
-            <div className="flex items-center gap-2 text-sm font-medium text-gray-700">
+            <div className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-200">
               <span>Next.js</span>
-              <span className="text-gray-300">•</span>
+              <span className="text-gray-300 dark:text-slate-600">•</span>
               <span>React</span>
-              <span className="text-gray-300">•</span>
+              <span className="text-gray-300 dark:text-slate-600">•</span>
               <span>TypeScript</span>
-              <span className="text-gray-300">•</span>
+              <span className="text-gray-300 dark:text-slate-600">•</span>
               <span>AI/ML</span>
             </div>
           </div>

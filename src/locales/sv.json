@@ -1,0 +1,173 @@
+{
+  "header": {
+    "portfolio": "Arbeten",
+    "services": "Tjänster",
+    "pricing": "Priser",
+    "about": "Om mig",
+    "contact": "Kontakt",
+    "bookCall": "Boka samtal"
+  },
+  "hero": {
+    "badge": "Baserad i Åseda, Småland",
+    "title": "Professionella hemsidor för företag i",
+    "titleHighlight": "Småland",
+    "subtitle": "Jag har byggt hemsidor för svenska bygg-, möbel- och tjänsteföretag. Nu hjälper jag lokala företag i Uppvidinge att synas online.",
+    "cta1": "Se mina arbeten",
+    "cta2": "Boka gratis samtal",
+    "trust1": "Fast pris",
+    "trust2": "Klar på 1-2 veckor",
+    "trust3": "Personlig service"
+  },
+  "portfolio": {
+    "title": "Tidigare arbeten",
+    "subtitle": "Projekt jag har byggt och lanserat",
+    "visitSite": "Besök sidan",
+    "techBadge": "Byggt med modern teknik:",
+    "projects": {
+      "taleForge": {
+        "category": "AI Storytelling Platform",
+        "badge": "#2 Globalt - Lovable Shipped 2025",
+        "description": "AI-driven berättarplattform för familjer och pedagoger. Skapa illustrerade berättelser med egna karaktärer."
+      },
+      "xlify": {
+        "category": "SaaS / Faktura-automation",
+        "description": "AI-verktyg som automatiserar fakturainmatning. Sparar tid för revisorer och ekonomiavdelningar."
+      },
+      "gimVea": {
+        "category": "Tjänsteföretag",
+        "description": "Professionell hemsida för virtuell assistanstjänst med kundrecensioner och bokningsfunktion."
+      },
+      "postrilo": {
+        "category": "AI Content Platform",
+        "description": "Plattform för AI-genererat innehåll till sociala medier. Skapa engagerande inlägg på minuter."
+      }
+    }
+  },
+  "services": {
+    "title": "Tjänster",
+    "subtitle": "Jag hjälper dig att få en professionell närvaro online",
+    "website": {
+      "title": "Hemsida för företag",
+      "description": "Komplett hemsida som presenterar ditt företag professionellt. Perfekt för hantverkare, butiker, restauranger och tjänsteföretag.",
+      "features": ["Modern design", "Mobilanpassad", "Kontaktformulär", "Google Maps", "SEO-optimerad"]
+    },
+    "ecommerce": {
+      "title": "Webbshop & E-handel",
+      "description": "Sälj produkter online med en snygg och enkel webbshop. Perfekt för butiker och produktföretag.",
+      "features": ["Produktkatalog", "Kategorier & filter", "Betalningslösning", "Orderhantering"]
+    },
+    "landing": {
+      "title": "Landningssida",
+      "description": "En effektiv enstaka sida för kampanjer eller när du snabbt behöver komma igång online.",
+      "features": ["Snabb leverans", "Kampanjfokuserad", "Tydlig CTA", "Mobilanpassad"]
+    },
+    "ai": {
+      "badge": "Smarta Tillägg",
+      "title": "Gör din hemsida smartare med AI",
+      "description": "Lägg till en AI-assistent som svarar på kundfrågor 24/7 – även när du sover.",
+      "features": [
+        "Svarar på vanliga frågor automatiskt",
+        "Bokar möten åt dig",
+        "Anpassad till ditt företag",
+        "Fungerar på svenska"
+      ],
+      "cta": "Kontakta mig för demo",
+      "chatGreeting": "Hej! Hur kan jag hjälpa dig idag?",
+      "chatQuestion": "Vad kostar en hemsida?",
+      "chatAnswer": "En företagshemsida börjar på 9 900 kr. Vill du boka ett samtal för att diskutera dina behov?"
+    },
+    "addons": {
+      "title": "Övriga tillägg",
+      "priceCalculator": "Priskalkylator",
+      "bookingSystem": "Bokningssystem",
+      "googleBusiness": "Google Företagsprofil",
+      "extraPages": "Extra sidor"
+    }
+  },
+  "pricing": {
+    "title": "Priser",
+    "subtitle": "Transparenta priser – inga överraskningar",
+    "popular": "Populärast",
+    "cta": "Kom igång",
+    "note": "Alla priser är exklusive moms. Hosting och domän tillkommer.",
+    "from": "från",
+    "plans": {
+      "landing": {
+        "name": "Landningssida",
+        "price": "4 900",
+        "description": "Perfekt för att komma igång snabbt",
+        "features": ["1 sida", "Mobilanpassad design", "Kontaktformulär", "Grundläggande SEO", "Leverans: 5 dagar"]
+      },
+      "business": {
+        "name": "Företagshemsida",
+        "price": "9 900",
+        "description": "Komplett hemsida för de flesta småföretag",
+        "features": ["Upp till 5 sidor", "Responsiv design", "Kontaktformulär", "Google Maps", "Bildgalleri", "SEO-optimerad", "Leverans: 2 veckor"]
+      },
+      "ecommerce": {
+        "name": "E-handel",
+        "price": "14 900",
+        "description": "Sälj produkter online",
+        "features": ["Produktkatalog", "Betalningslösning", "Orderhantering", "Anpassad design", "Alla funktioner från Företag", "Leverans: 3-4 veckor"]
+      }
+    }
+  },
+  "about": {
+    "title": "Om mig",
+    "name": "Kevin El-Zarka",
+    "bio1": "Jag bor i Åseda, Småland och hjälper lokala företag att få professionella hemsidor.",
+    "bio2": "Jag har byggt hemsidor för svenska företag inom bygg, möbel och tjänstesektorn. Nu fokuserar jag på att hjälpa lokala företag i Uppvidinge och Småland att synas online.",
+    "bio3": "Med erfarenhet av både enkla företagshemsidor och avancerade tech-produkter kan jag leverera precis det du behöver – varken mer eller mindre.",
+    "whyMe": "Varför välja mig?",
+    "reasons": [
+      "Erfarenhet av svenska företag",
+      "Baserad i Småland – förstår lokala behov",
+      "Hemsida klar på 1-2 veckor",
+      "Fast pris utan dolda kostnader",
+      "Personlig service på svenska"
+    ],
+    "highlights": {
+      "award": { "title": "#2 globalt", "description": "Lovable Shipped 2025" },
+      "swedish": { "title": "Svenska företag", "description": "Erfarenhet av lokala behov" },
+      "fast": { "title": "1-2 veckor", "description": "Snabb leverans" },
+      "price": { "title": "Fast pris", "description": "Inga dolda kostnader" }
+    }
+  },
+  "contact": {
+    "title": "Kontakta mig",
+    "subtitle": "Redo att prata om din hemsida? Skicka ett meddelande eller boka ett samtal.",
+    "form": {
+      "title": "Skicka meddelande",
+      "name": "Namn",
+      "namePlaceholder": "Ditt namn",
+      "email": "E-post",
+      "emailPlaceholder": "din@email.se",
+      "message": "Meddelande",
+      "messagePlaceholder": "Berätta om ditt projekt...",
+      "submit": "Skicka meddelande",
+      "sending": "Skickar...",
+      "success": "Tack för ditt meddelande!",
+      "successNote": "Jag återkommer inom 24 timmar.",
+      "error": "Något gick fel. Försök igen eller mejla direkt till kevin@smalandwebb.se"
+    },
+    "info": {
+      "title": "Kontaktuppgifter",
+      "email": "E-post",
+      "location": "Plats",
+      "locationValue": "Åseda, Uppvidinge",
+      "responseTime": "Svarstid",
+      "responseTimeValue": "Inom 24 timmar"
+    },
+    "booking": {
+      "title": "Föredrar du att prata?",
+      "subtitle": "Boka ett gratis 15-min samtal",
+      "cta": "Välj tid i min kalender"
+    }
+  },
+  "footer": {
+    "tagline": "Professionella hemsidor för småföretag i Småland. Baserad i Åseda, Uppvidinge.",
+    "quickLinks": "Snabblänkar",
+    "contact": "Kontakt",
+    "copyright": "Alla rättigheter förbehållna."
+  }
+}

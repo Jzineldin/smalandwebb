@@ -1,0 +1,173 @@
+{
+  "header": {
+    "portfolio": "Work",
+    "services": "Services",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact",
+    "bookCall": "Book a call"
+  },
+  "hero": {
+    "badge": "Based in Åseda, Småland",
+    "title": "Professional websites for businesses in",
+    "titleHighlight": "Småland",
+    "subtitle": "I've built websites for Swedish construction, furniture, and service companies. Now I help local businesses in Uppvidinge get visible online.",
+    "cta1": "See my work",
+    "cta2": "Book a free call",
+    "trust1": "Fixed price",
+    "trust2": "Ready in 1-2 weeks",
+    "trust3": "Personal service"
+  },
+  "portfolio": {
+    "title": "Previous work",
+    "subtitle": "Projects I've built and launched",
+    "visitSite": "Visit site",
+    "techBadge": "Built with modern technology:",
+    "projects": {
+      "taleForge": {
+        "category": "AI Storytelling Platform",
+        "badge": "#2 Global - Lovable Shipped 2025",
+        "description": "AI-driven storytelling platform for families and educators. Create illustrated stories with your own characters."
+      },
+      "xlify": {
+        "category": "SaaS / Invoice Automation",
+        "description": "AI tool that automates invoice entry. Saves time for accountants and finance departments."
+      },
+      "gimVea": {
+        "category": "Service Business",
+        "description": "Professional website for virtual assistant service with customer reviews and booking functionality."
+      },
+      "postrilo": {
+        "category": "AI Content Platform",
+        "description": "Platform for AI-generated social media content. Create engaging posts in minutes."
+      }
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "I help you get a professional online presence",
+    "website": {
+      "title": "Business Website",
+      "description": "Complete website that presents your business professionally. Perfect for craftsmen, shops, restaurants, and service companies.",
+      "features": ["Modern design", "Mobile-responsive", "Contact form", "Google Maps", "SEO-optimized"]
+    },
+    "ecommerce": {
+      "title": "Webshop & E-commerce",
+      "description": "Sell products online with a sleek and simple webshop. Perfect for shops and product companies.",
+      "features": ["Product catalog", "Categories & filters", "Payment solution", "Order management"]
+    },
+    "landing": {
+      "title": "Landing Page",
+      "description": "An effective single page for campaigns or when you need to get online quickly.",
+      "features": ["Fast delivery", "Campaign-focused", "Clear CTA", "Mobile-responsive"]
+    },
+    "ai": {
+      "badge": "Smart Add-ons",
+      "title": "Make your website smarter with AI",
+      "description": "Add an AI assistant that answers customer questions 24/7 – even while you sleep.",
+      "features": [
+        "Answers common questions automatically",
+        "Books meetings for you",
+        "Customized to your business",
+        "Works in Swedish"
+      ],
+      "cta": "Contact me for a demo",
+      "chatGreeting": "Hi! How can I help you today?",
+      "chatQuestion": "What does a website cost?",
+      "chatAnswer": "A business website starts at 9,900 SEK. Would you like to book a call to discuss your needs?"
+    },
+    "addons": {
+      "title": "Other add-ons",
+      "priceCalculator": "Price calculator",
+      "bookingSystem": "Booking system",
+      "googleBusiness": "Google Business Profile",
+      "extraPages": "Extra pages"
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Transparent pricing – no surprises",
+    "popular": "Most popular",
+    "cta": "Get started",
+    "note": "All prices exclude VAT. Hosting and domain are extra.",
+    "from": "from",
+    "plans": {
+      "landing": {
+        "name": "Landing Page",
+        "price": "4,900",
+        "description": "Perfect for getting started quickly",
+        "features": ["1 page", "Mobile-responsive design", "Contact form", "Basic SEO", "Delivery: 5 days"]
+      },
+      "business": {
+        "name": "Business Website",
+        "price": "9,900",
+        "description": "Complete website for most small businesses",
+        "features": ["Up to 5 pages", "Responsive design", "Contact form", "Google Maps", "Image gallery", "SEO-optimized", "Delivery: 2 weeks"]
+      },
+      "ecommerce": {
+        "name": "E-commerce",
+        "price": "14,900",
+        "description": "Sell products online",
+        "features": ["Product catalog", "Payment solution", "Order management", "Custom design", "All Business features", "Delivery: 3-4 weeks"]
+      }
+    }
+  },
+  "about": {
+    "title": "About me",
+    "name": "Kevin El-Zarka",
+    "bio1": "I live in Åseda, Småland and help local businesses get professional websites.",
+    "bio2": "I've built websites for Swedish companies in construction, furniture, and service sectors. Now I focus on helping local businesses in Uppvidinge and Småland get visible online.",
+    "bio3": "With experience in both simple business websites and advanced tech products, I can deliver exactly what you need – nothing more, nothing less.",
+    "whyMe": "Why choose me?",
+    "reasons": [
+      "Experience with Swedish companies",
+      "Based in Småland – understands local needs",
+      "Website ready in 1-2 weeks",
+      "Fixed price with no hidden costs",
+      "Personal service in Swedish"
+    ],
+    "highlights": {
+      "award": { "title": "#2 globally", "description": "Lovable Shipped 2025" },
+      "swedish": { "title": "Swedish companies", "description": "Experience with local needs" },
+      "fast": { "title": "1-2 weeks", "description": "Fast delivery" },
+      "price": { "title": "Fixed price", "description": "No hidden costs" }
+    }
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Ready to talk about your website? Send a message or book a call.",
+    "form": {
+      "title": "Send a message",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Thank you for your message!",
+      "successNote": "I'll get back to you within 24 hours.",
+      "error": "Something went wrong. Try again or email directly to kevin@smalandwebb.se"
+    },
+    "info": {
+      "title": "Contact details",
+      "email": "Email",
+      "location": "Location",
+      "locationValue": "Åseda, Uppvidinge",
+      "responseTime": "Response time",
+      "responseTimeValue": "Within 24 hours"
+    },
+    "booking": {
+      "title": "Prefer to talk?",
+      "subtitle": "Book a free 15-min call",
+      "cta": "Choose a time in my calendar"
+    }
+  },
+  "footer": {
+    "tagline": "Professional websites for small businesses in Småland. Based in Åseda, Uppvidinge.",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "copyright": "All rights reserved."
+  }
+}
