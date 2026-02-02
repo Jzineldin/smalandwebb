@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function About() {
   const highlights = [
     {
@@ -28,12 +30,27 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Om mig
-            </h2>
+            {/* Profile photo and heading */}
+            <div className="flex items-center gap-6 mb-6">
+              <div className="relative w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                <Image
+                  src="/profile.png"
+                  alt="Kevin El-Zarka"
+                  fill
+                  className="object-cover object-[center_20%] rounded-full ring-4 ring-white shadow-lg"
+                />
+              </div>
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                  Om mig
+                </h2>
+                <p className="text-blue-600 font-medium mt-1">Kevin El-Zarka</p>
+              </div>
+            </div>
+
             <div className="space-y-4 text-gray-600">
               <p>
-                Jag heter Kevin och bor i Åseda, Småland.
+                Jag bor i Åseda, Småland och hjälper lokala företag att få professionella hemsidor.
               </p>
               <p>
                 Jag har byggt hemsidor för svenska företag inom bygg, möbel och
